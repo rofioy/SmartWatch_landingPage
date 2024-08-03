@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartWatch</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../src/reset.css" />
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Swipper Js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Animate Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-body">
+    <header>
+      <nav class="navbar bg-black fixed z-50">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-slate-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a
+                  class="text-slate-50 hover:underline hover:underline-offset-4"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-slate-50 hover:underline hover:underline-offset-4"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-slate-50 hover:underline hover:underline-offset-4"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#home"
+            class="btn btn-ghost text-xl text-slate-50 hover:underline hover:underline-offset-4"
+            >SmartWatch</a
+          >
+        </div>
+        <div class="navbar-center hidden sm:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                href="#home"
+                class="text-slate-50 focus:text-slate-50 hover:underline hover:underline-offset-4"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="text-slate-50 focus:text-slate-50 hover:underline hover:underline-offset-4"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-slate-50 focus:text-slate-50 hover:underline hover:underline-offset-4"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Btn Buy -->
+        <div class="navbar-end">
+          <a
+            class="btn btn-sm rounded-xl bg-black text-slate-50 hover:bg-slate-50 hover:text-black sm:btn-md"
+            >Buy Now!</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home -->
+      <section
+        class="bg-[url(https://images.pexels.com/photos/437038/pexels-photo-437038.jpeg?auto=compress&cs=tinysrgb&w=600)] bg-cover bg-center bg-no-repeat"
+        id="home"
+      >
+        <div
+          class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+        >
+          <div class="mx-auto max-w-xl text-center">
+            <h1
+              class="hero-title text-3xl font-extrabold sm:text-5xl text-slate-50 animate__animated animate__backInDown"
+            >
+              Discover Your Health with the
+              <strong class="font-extrabold text-slate-50 sm:block">
+                New Smartwatch Fitness Tracker!
+              </strong>
+            </h1>
+            <p
+              class="hero-description mt-4 sm:text-xl/relaxed text-slate-50 animate__animated animate__backInDown"
+            >
+              Gain deep insights into your physical activity and health with
+              advanced technology on your wrist.
+            </p>
+            <div class="btn-hero mt-8 animate__animated animate__backInDown">
+              <a
+                class="block w-full rounded bg-black px-12 py-3 text-sm font-medium text-slate-50 shadow hover:bg-slate-50 hover:text-black focus:outline-none focus:ring active:bg-black sm:w-auto duration-150 ease-in"
+                href="#"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section class="features-section max-w-screen-2xl" id="features">
+        <h1
+          class="font-bold mt-4 ms-2 text-2xl divider divider-start"
+          data-aos="fade-right"
+        >
+          Features Product
+        </h1>
+        <section class="features-container mx-auto">
+          <h1
+            class="text-center text-xl font-semibold mt-4"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            Key Features
+          </h1>
+          <!-- Product -->
+          <div
+            class="features-items mt-12 flex flex-col space-y-4 lg:flex-row lg:justify-around"
+          >
+            <!-- Item 1 -->
+            <article
+              class="card bg-slate-950 left-article max-w-96 flex-col justify-center self-center p-2 order-2 lg:order-1 mt-2"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center font-semibold text-slate-50">Features</h1>
+              <ul class="flex-col space-y-4 mt-2">
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50"
+                    >Heart Rate Monitoring :</span
+                  >
+                  Track your heart rate throughout the day.
+                </li>
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50">Built-in GPS :</span>
+                  Accurately track outdoor activities like running and cycling.
+                </li>
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50"
+                    >Smart Notifications :</span
+                  >
+                  Receive notifications directly from your phone to your wrist.
+                </li>
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50"
+                    >Water Resistant :</span
+                  >
+                  Suitable for swimming and other water activities
+                </li>
+              </ul>
+            </article>
+            <!-- Item 2 -->
+            <figure
+              class="order-1 lg:order-2 m-auto"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <img
+                class="mask mask-hexagon-2"
+                src="https://images.pexels.com/photos/437038/pexels-photo-437038.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="https://www.pexels.com/id-id/foto/casing-aluminium-perak-apple-watch-437038/"
+              />
+            </figure>
+            <!-- Item 3 -->
+            <article
+              class="card bg-slate-950 right-article max-w-96 flex-col justify-center self-center p-2 order-3"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center font-semibold text-slate-50">Benefits</h1>
+              <ul class="flex-col space-y-4 mt-2">
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50"
+                    >Improve Health :</span
+                  >
+                  Easily monitor physical activity and health.
+                </li>
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50">Stay Active :</span>
+                  Suitable for swimming and other water activities
+                </li>
+                <li class="text-slate-50 tracking-wider">
+                  <span class="font-medium text-slate-50">Convenience :</span>
+                  Responsive touchscreen and stylish design for everyday use.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <!-- Social Media -->
+          <div
+            class="social-media-container max-w-96 mx-auto mt-4 bg-slate-950 rounded-xl"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="social-media-items flex justify-around self-center p-2">
+              <a href="#">
+                <i data-feather="instagram" class="text-slate-50"></i>
+              </a>
+              <a href="#">
+                <i data-feather="youtube" class="text-slate-50"></i>
+              </a>
+              <a href="#">
+                <i data-feather="twitter" class="text-slate-50"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Testimonial -->
+          <div class="testimonial-section mx-auto">
+            <h1
+              class="text-center text-xl font-semibold mt-4"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              Testimonial
+            </h1>
+            <div class="swiper testimonial-swiper mt-4">
+              <div
+                class="swiper-wrapper"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <!-- Items 1 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt=""
+                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        Andy, <br />
+                        Satisfied User
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 2 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/a-woman-standing-on-a-track-rGd_XtozlMU"
+                      src="https://images.unsplash.com/photo-1658911200109-a65fe8919a3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        Sasa, <br />
+                        Daily Runner
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 3 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/a-man-with-a-black-mask-on-his-face-VH36YMUSe8g"
+                      src="https://images.unsplash.com/photo-1713956707072-04890bfd7023?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        David, Outdoor Explorer
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 4 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/a-person-sitting-on-a-yellow-bench-bWvF5YCjCEQ"
+                      src="https://images.unsplash.com/photo-1658911215175-fdf383d1c7fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        Sarah, <br />
+                        Health Advocate
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 5 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/woman-sitting-on-black-stool-WqMeIIiNrFI"
+                      src="https://images.unsplash.com/photo-1527062603922-c94afc167de5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        Lisa, <br />
+                        Fitness Enthusiast
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 6 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/person-holding-gray-tabby-cat-while-lying-on-bed-mAsKA0jFfeQ"
+                      src="https://images.unsplash.com/photo-1482434368596-fbd06cae4f89?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        Rachel, <br />
+                        Sleep Tracker
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 7 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/a-person-with-a-watch-on-their-wrist-l6G6CDtjqZQ"
+                      src="https://images.unsplash.com/photo-1667729772354-4d221911fd9f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        John, <br />
+                        Tech Savvy
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Items 8 -->
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block bg-black">
+                    <img
+                      alt="https://unsplash.com/photos/a-close-up-of-a-person-wearing-a-smart-watch-_tLfi2wKxfU"
+                      src="https://images.unsplash.com/photo-1690016424217-03f4d9427a6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYXJ0d2F0Y2h8ZW58MHwxfDB8fHwy"
+                      class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div class="relative p-4 sm:p-6 lg:p-8">
+                      <p class="text-xl font-bold text-white sm:text-2xl">
+                        Michael, <br />
+                        Gym Regular
+                      </p>
+                      <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                          <p class="text-sm text-white">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Omnis perferendis hic asperiores quibusdam
+                            quidem voluptates doloremque reiciendis nostrum
+                            harum. Repudiandae?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Contact -->
+      <section class="contact-container mt-12" id="contact">
+        <h1
+          class="font-bold mt-4 me-2 text-2xl divider divider-end"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          Contact
+        </h1>
+        <!-- Contact Item -->
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-lg text-center">
+            <h1
+              class="text-2xl font-bold sm:text-3xl"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              Stay Connected with Your Health - and Us!
+            </h1>
+
+            <p
+              class="mt-4 text-gray-500"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              Our customer support is available 24/7 to assist you with any
+              questions or concerns. Feel free to reach out to us via email or
+              phone, and we'll be happy to help!!
+            </p>
+          </div>
+          <form
+            action="#"
+            class="mx-auto mb-0 mt-8 max-w-md space-y-4"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <div>
+              <label class="sr-only">Email</label>
+              <div class="relative">
+                <label class="block text-sm font-medium text-gray-700">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Enter email"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="OrderNotes"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Your Message
+              </label>
+
+              <textarea
+                id="OrderNotes"
+                class="p-2 mt-2 w-full rounded-lg border-gray-200 align-top shadow-sm sm:text-sm"
+                rows="4"
+                placeholder="Enter any message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="rounded-lg bg-black px-5 py-3 text-sm font-medium text-slate-50 hover:bg-slate-50 hover:text-black duration-300 w-full"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-50">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="flex justify-center text-black sm:justify-start">
+            <i data-feather="watch"></i>
+            <a href="#home" class="mt-1 ms-1 font-semibold">SmartWatch</a>
+          </div>
+
+          <p
+            class="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right"
+          >
+            Copyright & Created using tailwind css; 2024. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Js -->
+    <script src="index.js"></script>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- Swipper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".testimonial-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+          649: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1020: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1440: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
